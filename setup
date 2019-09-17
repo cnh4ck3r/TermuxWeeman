@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo 'Setting Up Weeman On Termux'
+echo 'Sit Back And Relax'
+apt update
+apt upgrade -y
+apt install git python python2 curl proot figlet -y
+cd $HOME 
+git clone http://github.com/evait-security/weeman
+cp -rf weeman $PREFIX/share
+rm -rf weeman
+cd $HOME 
+wget https://raw.githubusercontent.com/cnh4ck3r/TermuxWeeman/master/weeman
+wget https://raw.githubusercontent.com/cnh4ck3r/TermuxWeeman/master/uninstallweeman 
+chmod +x *
+cp -rf weeman $PREFIX/bin/
+cp -rf uninstallweeman $PREFIX/bin
+cd $HOME
+rm -rf weeman
+rm -rf uninstallweeman
+echo 'Successfully Installed Weeman

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+clear
+rm -rf $PREFIX/share/weeman
+
+rm -rf $PREFIX/bin/uninstallweeman
+
+rm -rf $PREFIX/bin/weeman
+
+echo 'Weeman Successfully Uninstalled'
+
