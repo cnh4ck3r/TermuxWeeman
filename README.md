@@ -13,7 +13,7 @@ apt upgrade -y
 apt install wget
 ```
 ```
-wget https://raw.github.com/cnh4ck3r /TermuxWeeman/master/setup
+wget https://raw.github.com/cnh4ck3r/TermuxWeeman/master/setup
 ```
 ```
 chmod +x setup
